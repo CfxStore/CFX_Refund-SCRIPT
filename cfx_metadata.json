@@ -1,0 +1,14 @@
+{
+    "name": "CFX Refunds",
+    "resourceId": "16583456792",
+    "version": "1.0.0-LEAKED",
+    "server_scripts": [
+        "src/server.lua"
+    ],
+    "client_scripts": [
+        "src/client.lua"
+    ],
+    "excluded_scritps": [
+        "config.lua"
+    ]
+}
