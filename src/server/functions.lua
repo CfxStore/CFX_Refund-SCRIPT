@@ -3,7 +3,6 @@ sFunc = {}
 local ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-
 local webhook = Config.webhook.url
 
 function sFunc.has_value(tab, val)
@@ -14,7 +13,6 @@ function sFunc.has_value(tab, val)
     end
     return false
 end
-
 
 function sFunc.getDiscordIdentifier(source)
     local identifiers = {
@@ -48,7 +46,6 @@ function sFunc.getRedeemInformation(source)
         return nil
     end
 end
-
 
 function sFunc.sendWebhook(message)
     if message == nil then return false end
