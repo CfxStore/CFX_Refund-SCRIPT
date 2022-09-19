@@ -1,4 +1,3 @@
---- OWN RESOURCE LEAKED BY HTTPS://GITHUB.COM/CFXSTORE
 
 
 Config = {}
@@ -22,5 +21,3 @@ Config.AceAllowed = {
     needAcePerm = false,
     permission = "cfx.refunds"
 }
-
---- OWN RESOURCE LEAKED BY HTTPS://GITHUB.COM/CFXSTORE
