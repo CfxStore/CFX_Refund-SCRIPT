@@ -1,10 +1,8 @@
---- OWN RESOURCE LEAKED BY HTTPS://GITHUB.COM/CFXSTORE
+sFunc = {}
 
 local ESX = nil
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-
-sFunc = {}
 
 local webhook = Config.webhook.url
 
@@ -100,6 +98,3 @@ function sFunc.addItemToInventory(player, options, item, quantity)
         sFunc.deleteRefundColumn(source, item, discordID)
     end
 end
-
-
---- OWN RESOURCE LEAKED BY HTTPS://GITHUB.COM/CFXSTORE
