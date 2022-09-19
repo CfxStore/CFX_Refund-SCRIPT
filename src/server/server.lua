@@ -1,6 +1,3 @@
---- OWN RESOURCE LEAKED BY HTTPS://GITHUB.COM/CFXSTORE
-
-
 local options = {"black_money", "money", "weapon"}
 
 local ESX = nil
@@ -8,7 +5,6 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 RegisterCommand("redeem", function(source, args)
     -- if not IsPlayerAceAllowed(source, Config.AceAllowed.permission) and Config.AceAllowed.needAcePerm then return end
-
 
     local rdmInformation = sFunc.getRedeemInformation(source)
     redeemItems(source, rdmInformation.item, rdmInformation.quantity)
@@ -29,12 +25,9 @@ function redeemItems(source, item, quantity)
     
     sFunc.addMoneyToBank(item, player, quantity)
     sFunc.addItemToInventory(player, options, item, quantity)
-
     
     sFunc.deleteRefundColumn(source, item, discordID)
     player.showNotification("Je hebt succesvol " .. item .. " gerefuned.")
     sFunc.sendWebhook("<@" .. discordID .. "> " .. "heeft succesvol " .. item .. " gerefuned.")
 
 end
-
---- OWN RESOURCE LEAKED BY HTTPS://GITHUB.COM/CFXSTORE
