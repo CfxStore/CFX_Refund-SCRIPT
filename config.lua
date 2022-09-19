@@ -1,5 +1,3 @@
-
-
 Config = {}
 
 Config.webhook = {
